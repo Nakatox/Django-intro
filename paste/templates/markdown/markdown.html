@@ -1,0 +1,6 @@
+{% extends "markdown/base.html" %}
+{% load markdown_extra %}
+
+{% block body %}
+    {{ markdown.content | markdown }}
+{% endblock %}
